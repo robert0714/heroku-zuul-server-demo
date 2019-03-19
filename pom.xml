@@ -9,12 +9,12 @@
   <name>Zuul Server</name>
   <version>1.0.0</version>
 
-  <parent>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-parent</artifactId>
-    <version>Angel.SR6</version>
-    <relativePath />
-  </parent>
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-parent</artifactId>
+		<version>Greenwich.SR1</version>
+		<relativePath />
+	</parent>
 
   <build>
     <plugins>
@@ -25,28 +25,28 @@
     </plugins>
   </build>
 
-  <properties>
-    <spring-cloud.version>Angel.SR6</spring-cloud.version>
-  </properties>
+	<properties>
+		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+	</properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-actuator</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zuul</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-eureka</artifactId>
-    </dependency>
-  </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+	</dependencies>
 
   <repositories>
     <repository>

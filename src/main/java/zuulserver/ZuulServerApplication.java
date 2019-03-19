@@ -1,11 +1,14 @@
 package zuulserver;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
+ 
 
 @Configuration
 @ComponentScan
@@ -13,7 +16,9 @@ import org.springframework.stereotype.Controller;
 @Controller
 @EnableZuulProxy
 public class ZuulServerApplication {
-  public static void main(String[] args) {
-    new SpringApplicationBuilder(ZuulServerApplication.class).web(true).run(args);
-  }
+	public static void main(String[] args) {
+//		new SpringApplicationBuilder(ZuulServerApplication.class).web(true).run(args);
+		ConfigurableApplicationContext ctx = SpringApplication.run(ZuulServerApplication.class, args);
+		assert (ctx != null);
+	}
 }
