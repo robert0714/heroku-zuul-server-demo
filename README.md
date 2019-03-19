@@ -10,7 +10,7 @@ that proxies request to backing services run at httpbin.org.
 ### Local development
 
 ```
-$ git clone https://github.com/kissaten/heroku-zuul-server-demo
+$ git clone https://github.com/robert0714/heroku-zuul-server-demo
 $ cd heroku-zuul-server-demo
 $ heroku create
 $ git push heroku master
