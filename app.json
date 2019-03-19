@@ -1,6 +1,6 @@
 {
   "name": "Zuul Server",
   "description": "Zuul Server demo project.",
-  "website": "https://github.com/kissaten/heroku-zuul-server-demo",
+  "website": "https://github.com/robert0714/heroku-zuul-server-demo",
   "success_url": "/index.html"
 }
